@@ -1,12 +1,15 @@
+from pathlib import path
 import streamlit as st
 import pickle
+
+BASE_DIR = Path(__file__).resolve().parent
 
 st.title("High-Demand Appliances")
 st.subheader("Our Most Popular Product This Week")
 st.subheader("Appliances")
 
 
-appliances = pickle.load(open("../popular_appliances.pkl", "rb"))
+appliances = pickle.load(open(BASE_DIR / "popular_appliances.pkl", "rb"))
 
 #st.dataframe(appliances.head())
 
