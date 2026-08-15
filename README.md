@@ -45,7 +45,7 @@ and then the user gets the recommendation that have high similarity with the use
 - Hybrid recommendation system
 
 ## Live Demo
-https://book-recommendation-3-1g0z.onrender.com/recommend
+(https://recommendation-engine3-vktdfmjxqgyvpeqgvbxqhr.streamlit.app/)
 
 ## Author
 Nubula H
