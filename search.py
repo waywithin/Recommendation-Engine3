@@ -1,12 +1,15 @@
+from pathlib import path
 import streamlit as st
 import pickle
 from sklearn.metrics.pairwise import linear_kernel
 from difflib import get_close_matches
 
+BASE_DIR = Path(__file__).resolve().parent
+
 # Load data
-products = pickle.load(open("../products.pkl", "rb"))
-tfidf_matrix = pickle.load(open("../tfidf_matrix.pkl", "rb"))
-tfidf = pickle.load(open("../tfidf.pkl", "rb"))
+products = pickle.load(open(BASE_DIR / "products.pkl", "rb"))
+tfidf_matrix = pickle.load(open(BASE_DIR / "tfidf_matrix.pkl", "rb"))
+tfidf = pickle.load(open(BASE_DIR / "tfidf.pkl", "rb"))
 
 st.title("Recommended Appliances")
 
